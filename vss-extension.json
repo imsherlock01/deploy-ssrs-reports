@@ -1,67 +1,82 @@
 {
-    "manifestVersion": 1,
-    "id": "deploy-ssrs-reports",
-    "name": "Deploy SSRS Reports",
-    "version": "0.0.8",
-    "publisher": "imsherlock01",
-	"public":  true,
-    "tags": [
-        "SSRS",
-        "rdl",
-		"reports",
-        "Reporting",
-		"SQL Server Reporting Services",
-        "Publish SSRS",
-        "Deploy SSRS"
-	],
-    "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services"
-        }
-    ],    
-    "description": "Publish SSRS reports & Delete Published report folders",
-    "categories": [
-        "Azure Pipelines"
-    ],
-    "icons": {
-        "default": "images/extension-icon.png"        
+  "manifestVersion": 1,
+  "id": "deploy-ssrs-reports",
+  "name": "Deploy SSRS Reports",
+  "version": "0.0.9",
+  "publisher": "imsherlock01",
+  "public": true,
+  "tags": [
+    "SSRS",
+    "RDL",
+    "reports",
+    "Reporting",
+    "SQL Server Reporting Services",
+    "Publish SSRS",
+    "Deploy SSRS"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Publish SSRS reports & Delete Published report folders",
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "icons": {
+    "default": "images/extension-icon.png"
+  },
+  "files": [
+    {
+      "path": "publish-ssrs-reports"
     },
-    "files": [
-        {
-            "path": "publish-ssrs-reports"
-        },
-        {
-            "path": "delete-report-folder"
-        }
-    ],
-	"content": {
-		"details": {
-			"path": "overview.md"
-		},
-		"license": {
-			"path": "license.md"
-		}
-	},
-    "contributions": [
-        {
-            "id": "publish-ssrs-reports",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "publish-ssrs-reports"
-            }
-        },
-        {
-            "id": "delete-report-folder",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": {
-                "name": "delete-report-folder"
-            }
-        }
-    ]
+    {
+      "path": "delete-report-folder"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "README.md"
+    },
+    "license": {
+      "path": "LICENSE"
+    }
+  },
+  "links": {
+    "repository": {
+      "uri": "https://github.com/imsherlock01/deploy-ssrs-reports"
+    },
+    "issues": {
+      "uri": "https://github.com/imsherlock01/deploy-ssrs-reports/issues"
+    },
+    "support": {
+      "uri": "mailto:imsherlock01@gmail.com"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/imsherlock01/deploy-ssrs-reports"
+  },
+  "contributions": [
+    {
+      "id": "publish-ssrs-reports",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "publish-ssrs-reports"
+      }
+    },
+    {
+      "id": "delete-report-folder",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "delete-report-folder"
+      }
+    }
+  ]
 }
