@@ -12,10 +12,11 @@ This extension will add a Release task in your TFS/VSTS instance that will help 
 
 ## Release notes
 * 0.0.5 - Initial release.
+* 0.0.9 - added GitHub & AzureDevOps pipeline links.
 
 ## Contribute 
 Please feel free to provide any bug details, suggestions, improvments and features you would like to see added to the extension in [link](https://github.com/imsherlock01/deploy-ssrs-reports/issues).
 
 Email : imsherlock01@gmail.com
 
-[![Build status](https://dev.azure.com/imsherlock01/imsherlock01/_apis/build/status/imsherlock01_deploy-ssrs-reports_CI)](https://dev.azure.com/imsherlock01/imsherlock01/_build/latest?definitionId=2)
+[![Build status](https://dev.azure.com/imsherlock01/GitHub_CI-CD/_apis/build/status/deploy-ssrs-reports)](https://dev.azure.com/imsherlock01/GitHub_CI-CD/_build/latest?definitionId=3&branchName=master)
